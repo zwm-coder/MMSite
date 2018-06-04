@@ -2,9 +2,9 @@
 这是一个基于豆瓣电影和QQ音乐的API接口实现的一个练手前端项目。本项目只是利用了jQuery，未基于其他的框架，因为只是处于练手的目的，所以没有选择利用其他的框架来写。
 
 ### 效果预览
-![](https://temp-1253237582.cos.ap-chengdu.myqcloud.com/1.png)
-![](https://temp-1253237582.cos.ap-chengdu.myqcloud.com/2.png)
-![](https://temp-1253237582.cos.ap-chengdu.myqcloud.com/3.png)
+![](https://temp-1253237582.cos.ap-chengdu.myqcloud.com/1.webp)  
+![](https://temp-1253237582.cos.ap-chengdu.myqcloud.com/2.webp)  
+![](https://temp-1253237582.cos.ap-chengdu.myqcloud.com/3.webp)  
 ### 项目目录结构说明
 ```
 │  .babelrc
