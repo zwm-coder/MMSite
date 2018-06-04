@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+/* 解决模糊带来的白边问题 */
+.background {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../static/bg/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: -2;
+}
+@font-face {
+    font-family: ShangYa;
+    src: url("../../static/font/尚雅体.otf");
+}
+.background2 {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../static/bg/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    -webkit-filter: blur(3px);
+    -ms-filter: blur(3px);
+    -moz-filter: blur(3px);
+    filter: blur(3px);
+}
+.title-box {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+.title-box>div {
+    width: 100%;
+    margin: 0 auto;    
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.title-box>div .title {
+    font-size: 2em;
+    font-family: ShangYa;
+    -webkit-transition: font-size 1s;
+    transition: font-size 1s;
+    margin-bottom: 10px;
+}
+.title-box>div .title>span {
+    color: rgb(255, 165, 0);
+}
+.title-box>div .title:hover {
+    font-size: 36px;
+}
+@keyframes sku-btn-icon-color {
+    0% {opacity: 1;}
+    25% {opacity: 0.75;}
+    50% {opacity: 0.5;}
+    100% {opacity: 0.25;}
+}
+.title-box>div .sku-btn {
+    margin-top: 80px;
+}
+.title-box>div .sku-btn i {
+    font-size: 3em;
+    animation-name: sku-btn-icon-color;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: rgb(255, 165, 0);
+    position: relative;
+}
+
+/* 电影节点 */
+section.movie {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.background-movie-copy {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../static/bg/background-movie.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+.background-movie {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../static/bg/background-movie.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+.movie-title-box {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.movie-title-box>div {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+}
+.movie-title-box .title {
+    text-indent: -250px;
+    font-family: ShangYa;
+    margin-bottom: 15px;
+}
+.movie-title-box .sub-title {
+    text-indent: 250px;
+    font-family: ShangYa;
+}
+
+.open-movie {
+    background: transparent;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid rgb(60, 179, 113);
+    border-radius: 5px;
+    color: rgb(60, 179, 113);
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 80px;
+    outline: none;
+    transition: background 2s, color 2s;
+}
+.open-movie i {
+    padding-left: 10px;
+}
+.open-movie:hover {
+    background: rgb(60, 179, 113);
+    color: #ffffff;
+}

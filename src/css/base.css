@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: rgba(47,47,47,0.98);
+}
+.container {
+    width: 94%;
+    height: 85%;
+    margin: 0 3%;
+    position: relative;
+    top: 15%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+.left {
+    width: 20%;
+    height: 100%;
+    background: rgb(40, 40, 40);
+    text-align: center;
+    position: fixed;
+}
+.left .circle-out {
+    width: 50px;
+    height: 50px;
+    background: #00FFFF;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 50px 0;
+}
+.left .circle-out .circle-inner {
+    width: 30px;
+    height: 30px;
+    background: rgb(40, 40, 40);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+}
+.left .icon-menu {
+    margin-top: 40px;
+}
+.left .icon-menu .item {
+    width: 100%;
+    padding: 30px 0;
+    font-size: 2.5em;
+}
+.icon-menu .item.active{
+    border: 1px solid rgb(80, 80, 80);
+    border-right: none;
+    border-left: 2px solid #00FFFF;
+}
+.icon-menu .item.active a{
+    color: #00FFFF;
+}
+.icon-menu .item a{
+    color: rgb(70,70,70);
+}
+
+.right {
+    float: left;
+    margin-left: 21%;
+    width: 80%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    overflow-y: hidden;
+    background-image: url('../../static/bg/movie.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.right iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: rgba(0,0,0,0.5);
+}
